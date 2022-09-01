@@ -1,0 +1,185 @@
+<!-- Continuando a personalizar nosso currículo, nesse exercício iremos aplicar os conhecimentos de CSS que já aprendemos. -->
+
+<!-- Antes de começar, troque as minhas informações pelas suas. Se quiser trazer o que foi feito no exercício 3.1 fique a vontade. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Currículo - Thiago Gomes</title>
+  <link rel="stylesheet" href="/Exercicios/curriculo/css/style.css">
+  <!--   Adicione o arquivo externo style.css que está na pasta ./assets/css/style.css como um arquivo da nossa página HTML. Não esqueça de fazer o mesmo no arquivo contato.html -->
+</head>
+
+<body>
+  <!--   Agora vamos contar com sua criatividade, personalize seu currículo com o que você já aprendeu sobre CSS. A seguir deixarei algumas dicas. -->
+
+  <!-- Fonts. Altere as cores, tamanhos e estilos de font (normal, bold, italic) como preferir. -->
+  <!-- Borda. Adicione bordas as seções do currículo. Só tenha cuidado para não exagerar demais. -->
+  <!-- Background. Mexa na cor de fundo se achar necessário. Recomendo cores como cinza claro. Você pode usar as cores haxadecimais para isso. Acesse: https://www.4devs.com.br/color_picker e escolha a melhor cor. -->
+  <!-- Não esqueça de usar seletores de tipo tag, class ou id na página para deixar nosso currículo mais personalizado e assim ter mais flexibilidade para customizar cada parte da página com mais tranquilidade. -->
+  <div>
+    <nav id="inicio">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencias">Experiencias</a></li>
+        <li>
+          <a href="#habilidades">Habilidades</a>
+          <ul>
+            <li><a href="#">Técnicas de vendas consultivas</a></li>
+            <li><a href="#">Vendas on-line</a></li>
+            <li><a href="#">HTML</a></li>
+          </ul>
+        </li>
+        <li><a href="./contato.html">Contatos</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+
+    <!--<div class="container-corpo">
+    <div class="container-menu">
+      <nav class="navegador">
+        <ul>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades">Habilidades</a>
+          </li>
+          <li>
+            <a href="#experiencias">Experiências</a>
+          </li>
+          <li>
+            <a href="./contato.html">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>  -->
+
+
+
+
+
+
+
+
+
+    <section id="container-corpo">
+      <h1 class="name" >Thiago Gomes</h1>
+
+      <img class="foto-perfil" src="/Exercicios/curriculo/img/perfil3.jpg" al="Foto de perfil do currículo.">
+
+
+      <h3 class="objetivo-title subli">Objetivo</h3>
+
+
+      <p class="objetivo"> Migrar para Area de desenvolverdor Front-End</p>
+
+
+
+      <p id="sobre"> <span class="title">Trabalho na área comercial, onde aprendi sobre o comportamento do consumidor e
+          notei como a tecnologia é essencial
+          tanto para as empresas como para o consumidor.
+          Sabendo que a tecnologia pode abrir portas eu decidi estudar <strong>Análise e
+            desenvolvimento de Sistemas pela Faculdade Uninove.
+          </strong>
+      </p>
+
+
+      <div id="container-habilidades">
+        <h2 class="subli" id="habilidades">Habilidades</h2>
+
+        <ul class="decoration">
+          <li>Técnicas de vendas consultivas </li>
+          <li> Vendas on-line</li>
+          <li> Técnicas de negociação e vendas</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+
+      </div>
+
+      <div id="container-experiencias">
+        <h3 class="subli" id="experiencias">Últimas experiências</h3>
+
+        <ul>
+          <li>Consultor de Negocios
+            <ul>
+              <li> <a href="//originalvw.com.br" target="_self"> <strong> Original Veiculos</strong> </a> - 2022</li>
+              <li>Atendimento ao cliente, incluindo negociação de preços e condições de
+                pagamento a fim de manter um bom relacionamento e benefícios às duas partes.</li>
+            </ul>
+          </li>
+          <li>Consultor de Negocios
+            <ul>
+              <li><a href="//greenautomoveis.com.br" target="_self"> <strong> Green Automotiva </strong></a> - 2021</li>
+              <li>Atendimento ao cliente, incluindo negociação de preços e condições de
+                pagamento a fim de manter um bom relacionamento e benefícios às duas partes.</li>
+            </ul>
+          </li>
+          <li>Consultor de Negocios
+            <ul>
+              <li><a href="//caoa.com.br" target="_self"> <strong> Caoa motor </strong>-2019 </a> </li>
+              <li>Atendimento ao cliente, incluindo negociação de preços e condições de
+                pagamento a fim de manter um bom relacionamento e benefícios às duas partes</li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <div id="container-formacao-academica">
+        <h3 class="subli">Formação acadêmica</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <td>Nome do Curso</td>
+              <td>Instituição</td>
+              <td>Nível</td>
+              <td>Ano de conclusão</td>
+              <td>Duração</td>
+              <td>Nota</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Análise e Desenvolvimeto de Sistemas</td>
+              <td>Faculdade Uninove </td>
+              <td>Graduação</td>
+              <td>2021</td>
+              <td>2,5 anos cursando</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Getão Comercial </td>
+              <td>Faculdade Uninove</td>
+              <td>Graduação</td>
+              <td>2020</td>
+              <td>1 ano e 6 meses</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>BootCamp FullStack</td>
+              <td>Infnrt</td>
+              <td>Tecnico</td>
+              <td>2022</td>
+              <td>1 ano cursando </td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+     </div>
+  </section>
+</body>
+
+<footer class="rodape">
+  <p class="texto"><a href="#inicio">Voltar ao topo</a></p>
+
+</footer>
+</html>

@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Press+Start+2P&family=Special+Elite&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*--------------menu com houver ----------------------------------------------------*/
+
+nav>ul {
+    list-style: none;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #49CBCD;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+
+/*conteudo menu*/
+nav>ul>li>a,
+nav>ul>li>a:visited {
+    padding: 20px;
+    background: #49CBCD;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    position: relative;
+    float: left;
+}
+
+
+/*muda a cor quando passa o mouse */
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    background: #484C55;
+}
+
+
+/* efeito da linha  a cima*/
+nav>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    transition: all 0.3s linear;
+}
+
+nav>ul>li>a:hover:before {
+    width: 100%;
+}
+
+
+
+/*efeito da linha abaixo*/
+nav>ul>li>a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s linear;
+}
+
+nav>ul>li>a:hover:after {
+    width: 100%;
+}
+
+
+/*oculta o sub menu*/
+
+nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding-left: 0;
+    float: right;
+    top: 67px;
+    ;
+}
+
+
+
+nav>ul>li>ul>li {
+    width: 100%
+}
+
+nav>ul>li>ul>li>a {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    right: 15px;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+
+/*------------------fim menu-------------------------------------------------------*/
+
+
+
+/*div {
+    font-family: 'Special Elite', cursive;
+
+    font-size: 15px;
+}
+
+
+
+.container-corpo {
+
+    justify-content: center;
+   
+}
+
+
+
+
+
+.navegador li:hover {
+
+    font-size: 20px;
+    background-color: #49CBCD;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+   
+
+
+}
+
+.navegador a {
+    text-decoration: none;
+    color: #484C55;
+    font-size: 20px;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.navegador a:hover {
+    background-color: rgb(229, 232, 235);
+    color: #49CBCD;
+    border-bottom: 3px solid #49CBCD;
+    
+
+}
+
+*/
+
+#container-corpo {
+
+    position: relative;
+    top: 139px;
+    padding: 0px 200px;
+
+}
+
+.subli {
+    border-bottom: 3px solid #49CBCD;
+
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    position: relative;
+    height: 30px;
+
+    top: 270px;
+    color: #484C55;
+
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    transition: transform 1.5s;
+
+}
+
+
+
+.foto-perfil:hover {
+    transform: rotate(0, 8deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+
+}
+
+#container-perfil {
+    display: flex;
+    flex-direction: column;
+    top: 115px;
+    position: relative;
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+
+
+.objetivo-title {
+    position: relative;
+    top: 25px;
+    color: #484C55;
+}
+
+.objetivo {
+    position: relative;
+    width: 350px;
+    margin: 35px;
+    top: 30px;
+    color: #484C55;
+
+}
+
+.title {
+
+    position: relative;
+    width: 950px;
+    margin: 25px;
+    top: 60px;
+    color: #484C55;
+
+
+}
+
+#container-habilidades {
+    position: relative;
+    top: 210px;
+    color: #484C55;
+
+}
+
+.decoration li {
+    text-decoration: none;
+}
+
+
+
+
+#container-experiencias {
+    color: #484C55;
+    position: relative;
+    top: 220px;
+}
+
+#container-experiencias a {
+    text-decoration: none;
+    color: #484C55;
+}
+
+#container-formacao-academica {
+    position: relative;
+    top: 250px;
+    color: #484C55;
+    padding: 10px;
+    gap: 10px;
+    
+}
+
+.contact {
+    color: #484C55;
+    /*font-family: sans-serif;*/
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.rodape{
+    position: relative;
+    
+    top: 500px;
+    
+    height: 84px;
+    background-color: #49CBCD;
+    color: black;
+}
+
+.texto{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    list-style: none;
+}
+
+.texto a {
+    text-decoration: none;
+    color: #484C55;
+}
+
+
+
+@media (max-width: 657px) { 
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    nav > ul {
+        position: relative;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        flex-direction:column ;
+         width: 100%;
+         height: 230px;
+        background-color: #49CBCD;
+    }
+
+    nav>ul>li >a {
+        font-size: 15px;
+        margin: 0px auto;
+        
+    }
+
+    #container-corpo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+     
+    }
+    #container-habilidades{
+        top: 65px;
+    }
+    #container-experiencias{
+        top: 80px;
+    }
+    #container-formacao-academica{
+        top: 120px;
+    }
+
+    .foto-perfil {
+        display: flex;
+        justify-content: center;
+         position: relative;
+         bottom: 150px;
+            
+        height: 200px;
+        width: 200px;
+     }
+
+     .name {
+        padding: 12px;
+        margin: 15px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        width: 300px;
+        color: #484C55;
+    
+    }
+    .objetivo-title{
+        display: flex;
+        flex-direction: column;
+        top: 75px;
+       
+    }
+
+    .objetivo{
+        position: relative;
+        width: 348px;
+        margin: 30px;
+        top: 57px;
+        color: #484C55;
+    }
+
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.decoration{
+    width:310px;
+}
+#container-experiencias{
+    
+        width:360px;
+    
+}
+
+
+@media (min-width: 768px) {
+    
+
+
+ }
+
+
+@media (min-width: 992px) {
+    
+
+
+ }
+
+
+@media (min-width: 1200px) {
+    
+
+
+
+}
